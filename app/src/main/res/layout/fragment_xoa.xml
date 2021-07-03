@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <EditText
+        android:id="@+id/textsuaJob"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Tên công việc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/textsuaCompany"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:hint="Tên công ty"
+        app:layout_constraintEnd_toEndOf="@+id/textsuaJob"
+        app:layout_constraintStart_toStartOf="@+id/textsuaJob"
+        app:layout_constraintTop_toBottomOf="@+id/textsuaJob" />
+
+    <EditText
+        android:id="@+id/textsuaAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Địa chỉ"
+        app:layout_constraintEnd_toEndOf="@+id/textsuaCompany"
+        app:layout_constraintStart_toStartOf="@+id/textsuaCompany"
+        app:layout_constraintTop_toBottomOf="@+id/textsuaCompany" />
+
+    <EditText
+        android:id="@+id/textsuaSalary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Mức lương"
+        app:layout_constraintEnd_toEndOf="@+id/textsuaAddress"
+        app:layout_constraintStart_toStartOf="@+id/textsuaAddress"
+        app:layout_constraintTop_toBottomOf="@+id/textsuaAddress" />
+
+    <EditText
+        android:id="@+id/textsuaDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Thời gian"
+        app:layout_constraintEnd_toEndOf="@+id/textsuaSalary"
+        app:layout_constraintStart_toStartOf="@+id/textsuaSalary"
+        app:layout_constraintTop_toBottomOf="@+id/textsuaSalary" />
+
+    <EditText
+        android:id="@+id/textsuaUrl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Đường dẫn"
+        app:layout_constraintEnd_toEndOf="@+id/textsuaDate"
+        app:layout_constraintStart_toStartOf="@+id/textsuaDate"
+        app:layout_constraintTop_toBottomOf="@+id/textsuaDate" />
+
+    <EditText
+        android:id="@+id/textsuaDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:hint="Mô tả công việc"
+        app:layout_constraintEnd_toEndOf="@+id/textsuaUrl"
+        app:layout_constraintStart_toStartOf="@+id/textsuaUrl"
+        app:layout_constraintTop_toBottomOf="@+id/textsuaUrl" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnsuaJob"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="16dp"
+            android:layout_marginRight="20dp"
+            android:text="Sửa" />
+
+        <Button
+            android:id="@+id/btnxoaJob"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="20dp"
+            android:text="Xóa" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
